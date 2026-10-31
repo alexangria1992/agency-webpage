@@ -1,15 +1,18 @@
 import Image from "next/image";
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 
 export default function Masthead() {
   const mastheadRef = useRef<HTMLElement>(null);
+  const [progress, setProgress] = useState(0);
+
   useEffect(() => {
     const handleScroll = () => {
       const height = mastheadRef.current?.clientHeight ?? 0;
       const scrollY = window.scrollY;
 
-      const progress = Math.min(1, scrollY / height);
-      console.log({ scrollY, height, progress });
+      const nextProgress = Math.min(1, scrollY / height);
+      setProgress(nextProgress);
+      console.log({ scrollY, height, nextProgress });
     };
     window.addEventListener("scroll", handleScroll);
 
@@ -19,6 +22,7 @@ export default function Masthead() {
   }, []);
   return (
     <section
+      style={{ transform: `translateY(-${20 * progress}vh)` }}
       ref={mastheadRef}
       className=" isolate sticky top-0 min-h-screen border-2 border-green-400 flex flex-col items-center  bg-[#a2a2a4] "
     >

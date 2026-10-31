@@ -4,6 +4,28 @@
  */
 export default function AboutUs() {
   return (
-    <section className="relative z-10 min-h-screen bg-white text-black-h-screen"></section>
+    <section className="relative z-10 min-h-screen bg-white text-black-h-screen">
+      <div>hello</div>
+      <div>hello</div>
+      <div>hello</div>
+      <div>hello</div>
+      <div>hello</div>
+      <div>hello</div>
+      <div>hello</div>
+      <div>hello</div>
+      <div>hello</div>
+      <div>hello</div>
+      <div>hello</div>
+      <div>hello</div>
+      <div>hello</div>
+      <div>hello</div>
+      <div>hello</div>
+      <div>hello</div>
+      <div>hello</div>
+      <div>hello</div>
+      <div>hello</div>
+      <div>hello</div>
+      <div>hello</div>
+    </section>
   );
 }
