@@ -1,0 +1,5 @@
+/assets/masthead-bg.m4v
+/assets/masthead-bg.mp4
+/assets/masthead-bg.webm
+/assets/works/coinbase-wallet.mp4
+/assets/works/stori.mp4

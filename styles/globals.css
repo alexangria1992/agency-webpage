@@ -3,5 +3,16 @@
 @tailwind utilities;
 
 /* Keep custom CSS small: the original uses Tailwind utility classes. */
-html { scroll-behavior: smooth; }
-body { margin: 0; }
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #000;
+  font-family:
+    "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  line-height: 1.1;
+  letter-spacing: 0;
+}
