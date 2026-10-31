@@ -1,8 +1,14 @@
 import Image from "next/image";
+import { useRef, useEffect } from "react";
 
 export default function Masthead() {
+  const mastheadRef = useRef<HTMLElement>(null);
+  useEffect(() => {}, []);
   return (
-    <section className="relative isolate min-h-screen border-2 border-green-400 flex flex-col items-center  bg-[#a2a2a4] ">
+    <section
+      ref={mastheadRef}
+      className=" isolate sticky top-0 min-h-screen border-2 border-green-400 flex flex-col items-center  bg-[#a2a2a4] "
+    >
       <video
         autoPlay
         loop

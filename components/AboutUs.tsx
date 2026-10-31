@@ -3,5 +3,7 @@
  * placeholder, so the sticky hero's layering can already be observed on scroll.
  */
 export default function AboutUs() {
-  return <section></section>;
+  return (
+    <section className="relative z-10 min-h-screen bg-white text-black-h-screen"></section>
+  );
 }
