@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Keep custom CSS small: the original uses Tailwind utility classes. */
+html { scroll-behavior: smooth; }
+body { margin: 0; }

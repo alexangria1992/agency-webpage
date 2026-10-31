@@ -1,0 +1,14 @@
+node_modules/
+.next/
+out/
+build/
+*.log
+.env*
+!.env.example
+.DS_Store
+.vercel/
+*.tsbuildinfo
+next-env.d.ts
+
+# Recovered proprietary media stays on your local machine by default.
+public/assets/masthead-bg.*

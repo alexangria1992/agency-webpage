@@ -1,0 +1,5 @@
+Save the recovered Wayback animation in this folder as:
+
+masthead-bg.mp4
+
+The component points to /assets/masthead-bg.mp4.
