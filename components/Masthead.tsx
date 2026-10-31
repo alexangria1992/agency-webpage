@@ -3,7 +3,20 @@ import { useRef, useEffect } from "react";
 
 export default function Masthead() {
   const mastheadRef = useRef<HTMLElement>(null);
-  useEffect(() => {}, []);
+  useEffect(() => {
+    const handleScroll = () => {
+      const height = mastheadRef.current?.clientHeight ?? 0;
+      const scrollY = window.scrollY;
+
+      const progress = Math.min(1, scrollY / height);
+      console.log({ scrollY, height, progress });
+    };
+    window.addEventListener("scroll", handleScroll);
+
+    handleScroll();
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   return (
     <section
       ref={mastheadRef}
